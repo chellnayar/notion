@@ -8,7 +8,7 @@
     color: #556B2F;
     padding: 5px;
     border: 0px solid #ececec;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     height:85%
 
@@ -45,11 +45,11 @@ body{
 
 
     if (hrs < 12)
-        greet = 'Good Morning, Chellie  ';
+        greet = 'good morning, chellie  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon, Chellie ';
+        greet = 'good afternoon, chellie ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening, Chellie  ';
+        greet = 'good evening, chellie  ';
 
     document.getElementById('lbl').innerHTML =
         greet;
