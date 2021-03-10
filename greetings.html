@@ -7,18 +7,17 @@
     font-size: large;
     color: #556B2F;
     padding: 5px;
-    border: 1px solid #ececec;
+    border: 0px solid #ececec;
     text-align: center;
     line-height: 1.5;
     height:85%
-
 
 }
 #date{
     font-size:large;
 }
 body{
-    background-color: #f1eee5;
+    background-color: #f9f9f9;
 }
     </style>
 </head>
@@ -27,7 +26,14 @@ body{
 </body>
 
 <script>
-
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
 
     
     var today = new Date();
@@ -36,6 +42,7 @@ body{
     var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
 
     var greet;
+
 
     if (hrs < 12)
         greet = 'Good Morning, Chellie  ';
