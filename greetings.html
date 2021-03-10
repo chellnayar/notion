@@ -3,11 +3,12 @@
     <title>Greeting Message</title> 
     <style>
 #lbl {
-    font-family: times;
-    font-size: large;
-    color: #556B2F;
-    padding: 5px;
-    border: 0px solid #ececec;
+    font-family: serif;
+    font-style: italic;
+    font-size: xx-large;
+    color: #37352F;
+    padding: 10px;
+    border: px solid #ececec;
     text-align: left;
     line-height: 1.5;
     height:85%
@@ -17,7 +18,7 @@
     font-size:large;
 }
 body{
-    background-color: #354C4B;
+    background-color: #DDEDEA;
 }
     </style>
 </head>
@@ -45,11 +46,11 @@ body{
 
 
     if (hrs < 12)
-        greet = 'good morning, chellie  ';
+        greet = '   good morning, chellie  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'good afternoon, chellie ';
+        greet = '   good afternoon, chellie ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'good evening, chellie  ';
+        greet = '   good evening, chellie  ';
 
     document.getElementById('lbl').innerHTML =
         greet;
